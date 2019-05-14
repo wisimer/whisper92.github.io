@@ -20,18 +20,18 @@ permalink: /
     <body>
         <div class="content">
             {% if site.front_img %}
-            <img src="http://me.wisim.me/upload/2019/4/wsm20190514114936270.jpg" id="fullscreen">
+            <img src="{{ site.front_img_path }}" id="fullscreen">
             {% endif %}
 
             {% if site.avatar %}
-                <img src="{{ site.avatar_img_path }}" id="avatar">
+                <img src="http://me.wisim.me/upload/2019/4/wsm20190514114936270.jpg" id="avatar">
             {% endif %}
 
             <h1>{{ site.name }}</h1>
             <h3>{{ site.description }}</h3>
 
                 <ul>
-                    {% if site.github_username %}
+                    <!-- {% if site.github_username %}
                     <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
                     {% endif %}
 
@@ -97,7 +97,7 @@ permalink: /
 
                     {% if site.tumblr_username %}
                     <li><a class="fa fa-2x fa-tumblr" href="https://{{ site.tumblr_username }}.tumblr.com/"><span class="description">Tumblr</span></a></li>
-                    {% endif %}
+                    {% endif %} -->
 
                     {% if site.weibo_username %}
                     <li><a class="fa fa-2x fa-weibo" href="https://weibo.com/{{ site.weibo_username }}"><span class="description">微博</span></a></li>
